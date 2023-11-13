@@ -2,9 +2,8 @@
 
 // Задача 2. Користувачі з другом
 
-const getUsersWithFriend = (users, friendName) => {
-  return users.filter(user => user.friends.includes(friendName));
-};
+const getUsersWithFriend = (users, friendName) =>
+  users.filter(user => user.friends.includes(friendName));
 
 const allUsers = [
   {

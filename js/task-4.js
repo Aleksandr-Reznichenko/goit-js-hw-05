@@ -2,11 +2,10 @@
 
 // Задача 4. Загальний баланс
 
-const getTotalBalanceByGender = (users, gender) => {
-  return users
+const getTotalBalanceByGender = (users, gender) =>
+  users
     .filter(user => user.gender === gender)
     .reduce((totalBalance, user) => totalBalance + user.balance, 0);
-};
 
 const allUsers = [
   {
